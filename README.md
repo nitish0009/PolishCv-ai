@@ -35,7 +35,7 @@ cd PolishCv-ai
 ### 2. Install Frontend Dependencies
 
 ```bash
-cd client
+cd PolishCv-ai
 npm install
 npm run dev
 ```

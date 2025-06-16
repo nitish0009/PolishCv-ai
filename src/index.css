@@ -1,0 +1,28 @@
+/* ✅ @import must come FIRST! */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* ✅ Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Custom class using @apply */
+.btn-primary {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition;
+}
+
+/* ✅ Custom animation */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
